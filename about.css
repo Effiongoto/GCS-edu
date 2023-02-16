@@ -1,0 +1,96 @@
+.about {
+    background-color: #f8f8f8;
+    width: 100%;
+    margin: 80px auto 30px;
+}
+body {
+    margin: 0;
+}
+.heading {
+    background-image: url('page-title.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    color: #fff;
+    margin-bottom: 30px;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(32, 7, 105, .8);
+}
+.heading .text {
+    padding-top: 100px;
+    padding-bottom: 40px;
+    padding-left: 80px;
+    z-index: 10;
+    color: #ffbc3b;
+    font-size: 30px;
+}
+
+
+.content {
+    padding-top: 40px;
+    padding-bottom: 100px;
+    padding-left: 80px;
+    padding-right: 80px;
+    color: rgba(32, 7, 105, 1);
+    display: flex;
+}
+.content .text {
+    width: 50%;
+    height: 400px;
+    margin-right: 40px;
+}
+.image {
+    width: 50%;
+    height: 400px;
+  }
+  .image img {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+  }
+.content p {
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 850px) {
+    .content {
+        padding: 40px 40px;
+    }
+    .content .text{
+        width: 80%;
+        padding: 04px;
+        margin-right: 0;
+    }
+    /* form {
+        padding: 0 20px;
+    } */
+    
+    .image {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .content .text{
+        height: 100%;
+        width: 90%;
+        
+    }
+    
+}
+
+/* Add media query for screens with a max width of 450px (phones) */
+@media only screen and (max-width: 450px) {
+    .heading {
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,111 @@
+.study {
+    background-color: #f8f8f8;
+    width: 100%;
+    margin: 80px auto 30px;
+}
+body {
+    margin: 0;
+}
+.heading {
+    background-image: url('../page-title.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    color: #fff;
+    margin-bottom: 30px;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(32, 7, 105, .8);
+}
+.heading .text {
+    padding-top: 100px;
+    padding-bottom: 40px;
+    padding-left: 80px;
+    z-index: 10;
+    color: #ffbc3b;
+    font-size: 30px;
+}
+
+
+.content {
+    padding-top: 40px;
+    padding-bottom: 100px;
+    padding-left: 80px;
+    padding-right: 80px;
+    color: rgba(32, 7, 105, 1);
+}
+.title {
+    text-align: center;
+}
+.title h2 {
+    font-size: 24px;
+}
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+  
+  .card {
+    flex-basis: calc(33.33% - 20px);
+    margin-bottom: 40px;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.03);
+  }
+  
+  
+  .card img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .card-content {
+    padding: 20px;
+    background-color: rgba(32, 7, 105, 1);
+    margin: 0;
+  }
+  
+  .card-content h2 {
+    margin: 0;
+    font-size: 20px;
+  }
+  
+  .card-content p {
+    margin: 10px 0 0 0;
+    font-size: 14px;
+  }
+
+  .card-content h2 {
+    color: #ffbc3b;
+  }
+  
+  .card-content p {
+    color: #fff;
+  }
+
+  @media (max-width: 768px) {
+    .card {
+      flex-basis: calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 650px) {
+    .card {
+      flex-basis: 100%;
+    }
+  }
